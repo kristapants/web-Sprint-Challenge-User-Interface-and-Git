@@ -1,8 +1,8 @@
+/*Begin CSS Reset*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,7 +46,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*End of CSS reset*/
 
+/*General styling*/
 * {
     box-sizing: border-box;
 }
@@ -66,6 +68,33 @@ p {
     line-height: 1.4;
 }
 
+/*Header styling*/
+header{
+    width: 800px;
+    margin:0 auto;
+}
+nav{
+    margin-left: 0;
+    padding-left: 0;
+}
+header nav{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 20px 20px 0;
+    font-size: 14px;
+}
+header nav a {
+    color: black;
+    text-decoration: none;
+    
+}
+.header-img {
+    margin: 20px;
+}
+
+/*Body styling*/
 .container {
     width: 800px;
     margin: 0 auto;
@@ -125,6 +154,8 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/*Footer Styling*/
 
 footer {
     width: 100%;
